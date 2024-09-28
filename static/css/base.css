@@ -3,11 +3,11 @@ html {
 }
 
 body {
-    background: url('/media/small-town-7320273_1280.jpg') no-repeat center center fixed;
-    background-size: cover;
+	background: url('/media/small-town-7320273_1280.jpg') no-repeat center center fixed;
+	background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: "Lato";
 }
 
 /* from Bulma */
@@ -21,8 +21,6 @@ body {
 
 .logo-font {
     text-transform: uppercase;
-    background: white;
-    max-width: 560px;
 }
 
 .main-logo-link {
@@ -58,7 +56,11 @@ body {
     border: 1px solid black !important;
 }
 
-/* -------------------------------- Media Queries */
+.bg-black {
+    background: #000 !important;
+}
+
+/* --------------------------------- Media queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
