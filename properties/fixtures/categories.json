@@ -1,0 +1,27 @@
+[
+    {
+        "pk": 1,
+        "model": "properties.category",
+        "fields": {
+            "name": "apartments_condos",
+            "friendly_name": "Apartments & Condos"
+        }
+    },
+  {
+    "pk": 2,
+    "model": "properties.category",
+    "fields": {
+      "name": "house_lot",
+      "friendly_name": "House & Lot"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "properties.category",
+    "fields": {
+      "name": "lot",
+      "friendly_name": "Lot"
+    }
+  }
+    
+]
