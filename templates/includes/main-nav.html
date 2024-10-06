@@ -17,13 +17,14 @@
                 Apartments & Condos
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">0 Bedrooms(Studio)</a>
-                <a href="" class="dropdown-item">1 Bedroom</a>
-                <a href="" class="dropdown-item">2 Bedrooms</a>
-                <a href="" class="dropdown-item">3 Bedrooms</a>
-                <a href="" class="dropdown-item">4 Bedrooms</a>
-                <a href="" class="dropdown-item">5 Bedrooms</a>
-                <a href="" class="dropdown-item">All Apartments & Condos</a>
+                <a href="{% url 'all_properties' %}?category=studio" class="dropdown-item">0 Bedrooms(Studio)</a>
+                <a href="{% url 'all_properties' %}?category=one_bedrooms_apartment_condo" class="dropdown-item">1 Bedroom Apartment/Condo</a>
+                <a href="{% url 'all_properties' %}?category=two_bedrooms_apartment_condo" class="dropdown-item">2 Bedrooms Apartment/Condo</a>
+                <a href="{% url 'all_properties' %}?category=three_bedrooms_apartment_condo" class="dropdown-item">3 Bedrooms Apartment/Condo</a>
+                <a href="{% url 'all_properties' %}?category=four_bedrooms_apartment_condo" class="dropdown-item">4 Bedrooms Apartment/Condo</a>
+                <a href="{% url 'all_properties' %}?category=five_bedrooms_apartment_condo" class="dropdown-item">5 Bedrooms Apartment/Condo</a>
+                <a href="{% url 'all_properties' %}?category=studio,one_bedrooms_apartment_condo,two_bedrooms_apartment_condo,three_bedrooms_apartment_condo,four_bedrooms_apartment_condo,five_bedrooms_apartment_condo" 
+                    class="dropdown-item">All Apartments & Condos</a>
             </div>
         </li>
 
@@ -32,13 +33,14 @@
                 House and Lot
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">0 Bedrooms(Studio)</a>
-                <a href="" class="dropdown-item">1 Bedroom</a>
-                <a href="" class="dropdown-item">2 Bedrooms</a>
-                <a href="" class="dropdown-item">3 Bedrooms</a>
-                <a href="" class="dropdown-item">4 Bedrooms</a>
-                <a href="" class="dropdown-item">5 Bedrooms</a>
-                <a href="" class="dropdown-item">All House and Lot</a>
+                <a href="{% url 'all_properties' %}?category=lot" class="dropdown-item">Lot</a>
+                <a href="{% url 'all_properties' %}?category=one_bedrooms_house_lot" class="dropdown-item">1 Bedroom House & Lot</a>
+                <a href="{% url 'all_properties' %}?category=two_bedrooms_house_lot" class="dropdown-item">2 Bedrooms House & Lot</a>
+                <a href="{% url 'all_properties' %}?category=three_bedrooms_house_lot" class="dropdown-item">3 Bedrooms House & Lot</a>
+                <a href="{% url 'all_properties' %}?category=four_bedrooms_house_lot" class="dropdown-item">4 Bedrooms House & Lot</a>
+                <a href="{% url 'all_properties' %}?category=five_bedrooms_house_lot" class="dropdown-item">5 Bedrooms House & Lot</a>
+                <a href="{% url 'all_properties' %}?category=one_bedrooms_house_lot,two_bedrooms_house_lot,three_bedrooms_house_lot,four_bedrooms_house_lot,five_bedrooms_house_lot" 
+                    class="dropdown-item">All House and Lot</a>
             </div>
         </li>
 
@@ -47,10 +49,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'all_properties' %}?category=new_listed" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'all_properties' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'all_properties' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'all_properties' %}?category=new_listed,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
