@@ -1,11 +1,24 @@
 from decimal import Decimal
 from django.conf import settings
+from django.shortcuts import get_object_or_404
+from properties.models import Property
 
 def cart_contents(request):
 
     cart_items = []
     total = 0
     property_count = 0
+    cart = request.session.get('cart', {})
+
+    for item_id, quantity in cart.items():
+        property = get_object_or_404(Property, pk=item_id)
+        total += quantity * property.price
+        property_count += quantity
+        cart_items.append({
+            'item_id': item_id,
+            'quantity': quantity,
+            'property': property,
+        })
 
     if total < settings.FREE_BOOKING_THRESHOLD:
         booking_fee = total * Decimal(settings.STANDARD_BOOKING_PERCENTAGE/100)
