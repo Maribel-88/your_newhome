@@ -74,6 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'cart.contexts.cart_contents',
             ],
         },
     },
@@ -162,3 +163,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 CSRF_TRUSTED_ORIGINS = ['https://8000-maribel88-yournewhome-tjf23zp0jtw.ws-eu116.gitpod.io']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+FREE_BOOKING_THRESHOLD = 50
+STANDARD_BOOKING_PERCENTAGE = 10
